@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { fetchProductDetail } from "../model/product";
-import { DetailParam, ProductDetail } from "~/types/types";
-import { useLoading } from "~/context/loadingContext";
-import { useError } from "~/context/errorContext";
+import { DetailParam, ProductDetail } from "../types/types";
+import { useLoading } from "../context/loadingContext";
+import { useError } from "../context/errorContext";
 
 interface ParamProps {
   params: DetailParam;

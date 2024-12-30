@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import Modal from "~/components/modal";
-import { ErrorContextType } from "~/types/types";
+import Modal from "../components/modal";
+import { ErrorContextType } from "../types/types";
 
 const ErrorContext = createContext<ErrorContextType | undefined>(undefined);
 

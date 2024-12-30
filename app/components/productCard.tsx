@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
-import { PriceComponent } from "~/common/common";
-import { Product } from "~/types/types";
+import { PriceComponent } from "../common/common";
+import { Product } from "../types/types";
 
 interface ProductProps {
   product: Product;

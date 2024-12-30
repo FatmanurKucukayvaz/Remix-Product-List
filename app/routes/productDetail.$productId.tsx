@@ -1,7 +1,7 @@
 import { useParams } from "@remix-run/react";
-import { PriceComponent } from "~/common/common";
-import { DetailParam } from "~/types/types";
-import useProductDetail from "~/vievModel/useProductDetail";
+import { PriceComponent } from "../common/common";
+import { DetailParam } from "../types/types";
+import useProductDetail from "../vievModel/useProductDetail";
 
 export default function ProductDetailPage() {
   const params = useParams<DetailParam>();

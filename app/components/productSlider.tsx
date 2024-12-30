@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 import { useState } from "react";
-import { PriceComponent } from "~/common/common";
-import { Product } from "~/types/types";
+import { PriceComponent } from "../common/common";
+import { Product } from "../types/types";
 
 interface ProductProps {
   products: Product[];
@@ -12,6 +12,11 @@ export default function ProductSlider({ products }: ProductProps) {
 
   return (
     <div className="relative flex mb-5 justify-center items-center h-64">
+      {products.length === 0 ? (
+        <div className="flex m-5 justify-center">
+          <h1>Listelenecek ürün yok</h1>
+        </div>
+      ) : null}
       {products.map((product: Product, i: number) => {
         return (
           <Link

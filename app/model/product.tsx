@@ -1,4 +1,4 @@
-import { ProductResponse, ProductDetail } from "~/types/types";
+import { ProductResponse, ProductDetail } from "../types/types";
 
 export const fetchProductData = async (
   url?: string

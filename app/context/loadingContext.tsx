@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import { LoadingContextType } from "~/types/types";
+import { LoadingContextType } from "../types/types";
 
 const LoadingContext = createContext<LoadingContextType | undefined>(undefined);
 

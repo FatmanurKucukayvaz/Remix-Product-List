@@ -1,7 +1,7 @@
-import ProductCard from "~/components/productCard";
-import useProduct from "~/vievModel/useProduct";
-import useHorizontalProduct from "~/vievModel/useHorizontalProduct";
-import ProductSlider from "~/components/productSlider";
+import ProductCard from "../components/productCard";
+import useProduct from "../vievModel/useProduct";
+import useHorizontalProduct from "../vievModel/useHorizontalProduct";
+import ProductSlider from "../components/productSlider";
 import { useState } from "react";
 
 export default function ProductList() {
@@ -21,6 +21,11 @@ export default function ProductList() {
     <div className="min-h-scree p-6 lg:px-40 sm:px-6">
       <ProductSlider products={horizontalProducts}></ProductSlider>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
+        {products.length === 0 ? (
+          <div className="flex m-5 justify-center">
+            <h1>Listelenecek ürün yok</h1>
+          </div>
+        ) : null}
         {showData.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

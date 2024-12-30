@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { fetchProductData } from "../model/product";
-import { Product } from "~/types/types";
-import { useLoading } from "~/context/loadingContext";
-import { useError } from "~/context/errorContext";
+import { Product } from "../types/types";
+import { useLoading } from "../context/loadingContext";
+import { useError } from "../context/errorContext";
 
 const useHorizontalProduct = () => {
   const [horizontalProducts, setHorizontalProducts] = useState<Product[]>([]);
